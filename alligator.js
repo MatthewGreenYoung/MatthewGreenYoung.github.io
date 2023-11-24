@@ -11,15 +11,15 @@ document.body.appendChild(alligator);
 function walkAlligator() {
     let currentPosition = 0;
     const screenWidth = window.innerWidth;
-    const walkSpeed = 1;
+    const walkSpeed = .5;
 
     function step() {
-        currentPosition += walkSpeed;
+        currentPosition -= walkSpeed;
         alligator.style.right = currentPosition + 'px';
 
         
-        if (currentPosition > screenWidth) {
-            currentPosition = -50;
+        if (currentPosition < -50) {
+            currentPosition = window.innerWidth;
         }
 
         requestAnimationFrame(step);
