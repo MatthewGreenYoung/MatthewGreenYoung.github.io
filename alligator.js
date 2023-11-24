@@ -4,7 +4,8 @@ alligator.alt = 'Alligator';
 alligator.style.position = 'fixed';
 alligator.style.bottom = '0';
 alligator.style.right = '0';
-alligator.style.width = '50px';
+alligator.style.width = '75px';
+alligator.style.height = '75px';
 document.body.appendChild(alligator);
 
 function walkAlligator() {
