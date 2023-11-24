@@ -12,11 +12,11 @@ function walkAlligator() {
     const walkSpeed = .8;
 
     function step() {
-        currentPosition -= walkSpeed;
+        currentPosition += walkSpeed;
         alligator.style.right = currentPosition + 'px';
 
         
-        if (currentPosition < -50) {
+        if (currentPosition > -50) {
             currentPosition = window.innerWidth;
         }
 
