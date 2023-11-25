@@ -12,7 +12,7 @@ document.body.appendChild(alligator);
 function walkAlligator() {
     let currentPosition = 0;
     const screenWidth = window.innerWidth;
-    const walkSpeed = .8;
+    const walkSpeed = 1.2;
 
     function step() {
         currentPosition += walkSpeed;
