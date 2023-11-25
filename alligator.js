@@ -4,7 +4,8 @@ alligator.alt = 'Alligator';
 alligator.style.position = 'fixed';
 alligator.style.bottom = '0';
 alligator.style.left = '0';
-alligator.style.width = '50px';
+alligator.style.width = '100px';
+alligator.style.height = '100px';
 document.body.appendChild(alligator);
 
 
