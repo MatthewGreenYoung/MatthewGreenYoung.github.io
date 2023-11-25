@@ -3,22 +3,23 @@ alligator.src = 'smallalligator.png';
 alligator.alt = 'Alligator';
 alligator.style.position = 'fixed';
 alligator.style.bottom = '0';
-alligator.style.right = '0';
-alligator.style.width = '75px';
-alligator.style.height = '75px';
+alligator.style.left = '0';
+alligator.style.width = '50px';
 document.body.appendChild(alligator);
 
+
 function walkAlligator() {
-    let currentPosition = window.innerWidth;
-    const walkSpeed = .8;
+    let currentPosition = 0;
+    const screenWidth = window.innerWidth;
+    const walkSpeed = 5;
 
     function step() {
         currentPosition += walkSpeed;
-        alligator.style.right = currentPosition + 'px';
+        alligator.style.left = currentPosition + 'px';
 
         
-        if (currentPosition > -50) {
-            currentPosition = window.innerWidth;
+        if (currentPosition > screenWidth) {
+            currentPosition = -50;
         }
 
         requestAnimationFrame(step);
