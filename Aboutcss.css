@@ -32,6 +32,12 @@ section {
         text-align: center;
     }
 
+.aboutme {
+    background-color: #7cb855;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
 footer {
     background-color: #3c6e57;
     color: #fff;
