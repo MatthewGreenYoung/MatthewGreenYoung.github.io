@@ -32,7 +32,7 @@ function moveAlligator(alligator) {
 }
 
 
-const numberOfAlligators = 3;
+const numberOfAlligators = 10;
 const alligators = [];
 
 for (let i = 0; i < numberOfAlligators; i++) {
