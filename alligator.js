@@ -30,5 +30,5 @@ function moveAlligator(alligator) {
 
     step();
 }
-
+const alligator = makeAlligator();
 moveAlligator();
