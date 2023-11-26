@@ -12,13 +12,13 @@ function makeAlligator() {
     return alligator;
 }
 
-function moveAlligator(alligator) {
-    let currentPosition = 0;
+function moveAlligator(alligator, index) {
+    let initialPosition = index * 150;
+    let currentPosition = intialposition;
     const screenWidth = window.innerWidth;
     const walkSpeed = 1.2;
 
     function step() {
-        let initialposition = index * 150;
         currentPosition += walkSpeed;
         alligator.style.left = currentPosition + 'px';
 
@@ -33,7 +33,7 @@ function moveAlligator(alligator) {
 }
 
 
-const numberOfAlligators = 10;
+const numberOfAlligators = ;
 const alligators = [];
 
 for (let i = 0; i < numberOfAlligators; i++) {
