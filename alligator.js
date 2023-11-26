@@ -1,4 +1,4 @@
-function createAlligator() {
+function makeAlligator() {
     const alligator = document.createElement('img');
     alligator.src = 'smallalligator.png';
     alligator.alt = 'Alligator';
@@ -12,7 +12,7 @@ function createAlligator() {
     return alligator;
 }
 
-function walkAlligator(alligator) {
+function moveAlligator(alligator) {
     let currentPosition = 0;
     const screenWidth = window.innerWidth;
     const walkSpeed = 1.2;
@@ -36,7 +36,7 @@ const numberOfAlligators = 3;
 const alligators = [];
 
 for (let i = 0; i < numberOfAlligators; i++) {
-    const alligator = createAlligator();
-    walkAlligator(alligator);
+    const alligator = makeAlligator();
+    moveAlligator(alligator);
     alligators.push(alligator);
 }
