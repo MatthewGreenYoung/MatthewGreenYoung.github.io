@@ -30,3 +30,5 @@ function moveAlligator(alligator) {
 
     step();
 }
+
+moveAlligator();
