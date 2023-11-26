@@ -18,6 +18,7 @@ function moveAlligator(alligator) {
     const walkSpeed = 1.2;
 
     function step() {
+        let initialposition = index * 150;
         currentPosition += walkSpeed;
         alligator.style.left = currentPosition + 'px';
 
