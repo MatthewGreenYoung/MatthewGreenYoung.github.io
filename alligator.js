@@ -12,9 +12,8 @@ function makeAlligator() {
     return alligator;
 }
 
-function moveAlligator(alligator, index) {
-    let initialPosition = index * 150;
-    let currentPosition = initialPosition;
+function moveAlligator(alligator) {
+    let currentPosition = 0;
     const screenWidth = window.innerWidth;
     const walkSpeed = 1.2;
 
@@ -23,22 +22,11 @@ function moveAlligator(alligator, index) {
         alligator.style.left = currentPosition + 'px';
 
         if (currentPosition > screenWidth) {
-            currentPosition = -50 + initialPosition;
+            currentPosition = -50;
         }
 
         requestAnimationFrame(step);
     }
 
     step();
-}
-
-
-
-const numberOfAlligators = ;
-const alligators = [];
-
-for (let i = 0; i < numberOfAlligators; i++) {
-    const alligator = makeAlligator();
-    moveAlligator(alligator);
-    alligators.push(alligator);
 }
