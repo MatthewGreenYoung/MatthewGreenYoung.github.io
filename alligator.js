@@ -14,7 +14,7 @@ function makeAlligator() {
 
 function moveAlligator(alligator, index) {
     let initialPosition = index * 150;
-    let currentPosition = intialposition;
+    let currentPosition = initialPosition;
     const screenWidth = window.innerWidth;
     const walkSpeed = 1.2;
 
@@ -23,7 +23,7 @@ function moveAlligator(alligator, index) {
         alligator.style.left = currentPosition + 'px';
 
         if (currentPosition > screenWidth) {
-            currentPosition = -50;
+            currentPosition = -50 + initialPosition;
         }
 
         requestAnimationFrame(step);
@@ -31,6 +31,7 @@ function moveAlligator(alligator, index) {
 
     step();
 }
+
 
 
 const numberOfAlligators = ;
