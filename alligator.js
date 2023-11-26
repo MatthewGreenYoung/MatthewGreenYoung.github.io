@@ -31,4 +31,4 @@ function moveAlligator(alligator) {
     step();
 }
 const alligator = makeAlligator();
-moveAlligator();
+moveAlligator(alligator);
